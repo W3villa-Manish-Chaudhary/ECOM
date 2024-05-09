@@ -328,8 +328,8 @@ nav {
 /* 6 section */
 
 .categories h1 {
-
-  color: rgb(77, 77, 77);
+  padding-top: 20px;
+  color:rgb(252 251 255);
   font-size: 32px;
   text-align: center;
 }
@@ -344,7 +344,7 @@ nav {
   text-align: center;
   font-size: 16px;
   padding: 16px;
-  color:rgb(128, 128, 128)
+  color:rgb(192 192 192)
 }
 
 .categories p a {
@@ -596,7 +596,121 @@ nav {
 /* 10 section */
 
 
-.gallery{
+.latest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.greybg {
+  background-color: rgb(175, 171, 165);
+}
+
+.latestcards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.latestcardsimg {
+  border-radius: 16px;
+  position: relative;
+  align-self: center;
+  object-fit: cover;
+  height: 70%;
+  width: 97%;
+}
+
+.latestcards img {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  height: 95%;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.views {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  opacity: 0.86;
+}
+
+.views p {
+  color: black;
+  font-size: 14px;
+  padding: 0 6.5px;
+  margin: 0;
+}
+
+.views img {
+  padding: 0 0.16px;
+  height: 16px;
+  width: 16px;
+}
+
+.latestcards h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.latestcards p {
+  font-size: 20px;
+  color: black;
+  font-weight: 300;
+  text-align: center;
+}
+
+.latestcards a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  text-align: center;
+}
+
+.datetags {
+  position: absolute;
+  background-color: rgb(37, 88, 216);
+  top: 2%;
+  left: 2%;
+  height: 7%;
+  width: 10%;
+  border-radius: 5px;
+}
+
+.datetags p {
+  padding: 1.2px;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* old code */
+
+
+
+/* .gallery{
   padding-bottom: 30px;
 }
 
@@ -622,35 +736,53 @@ nav {
   display: flex;
   gap: 25px;
 
-}
-
-/* 11 section */
+} */
 
 
-.latest {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .latest {
   display: flex;
   justify-content: space-between;
-
 }
 .greybg{
   background-color: rgb(175, 171, 165);
 }
+
+
 .latestcards {
- 
   display: flex;
-  position: relative;
   flex-direction: column;
+  justify-content: center;
+  position: relative;
 
 }
 
-.latestcards-img {
+.latestcardsimg {
   border-radius: 16px;
-  position: relative;
   align-self: center;
+  object-fit: cover;
   height: 70%;
   width: 97%;
+  
 
 }
+
 
 .latestcards img {
   border-top-left-radius: 3%;
@@ -661,6 +793,16 @@ nav {
   margin-left: auto;
   margin-right: auto;
 
+}
+.views {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  position: absolute;
+  bottom: 46%;
+  left: 0%;
+  width: 97%;
+  opacity: 0.8;
 }
 
 .latestcards h2 {
@@ -703,15 +845,8 @@ nav {
   font-size: small;
 }
 
-.views {
-  display: flex;
-  background-color: rgba(248, 238, 238, 0.658);
-  justify-content: center;
-  position: absolute;
-  top: 268px;
-  width: 97%;
-  opacity: 1;
-}
+
+
 
 .views p {
   color: black;
@@ -724,7 +859,12 @@ nav {
   padding: 0 0.16px;
   height: 16px;
   width: 16px;
-}
+} */
+
+/* 11 section */
+
+
+
 
 .latestblog {
   display: flex;
@@ -889,16 +1029,14 @@ nav {
 
 
 .social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:block;
+  text-align: center;
   padding: 12px;
 }
 
-.social a {
-  display: inline-block;
-  width: 50px; 
-  height: 50px; 
+.social a { 
+
+  padding: 8px;
   border-radius: 50%; 
   background-color: blue;
   text-align: center;
@@ -912,6 +1050,7 @@ nav {
 .slick-dots li.slick-active button:before {
   color:rgb(243, 50, 50) !important;
 }
+
 
 
 
@@ -1105,9 +1244,6 @@ nav {
   }
  
 
-  .latest {
-    flex-wrap: wrap;
-  }
 
   .latest p {
     font-size: medium;
@@ -1143,9 +1279,6 @@ nav {
     justify-content: unset;
   }
 
-  .views {
-    top: 57vw;
-  }
 
 
 }
@@ -1167,7 +1300,7 @@ nav {
   }
 
   .footer-items {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
   }
 
@@ -1182,6 +1315,7 @@ nav {
     height: 100%;
     width: 100%;
   }
+
 
   
 }
